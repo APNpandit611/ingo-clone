@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ingo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="js/bootstrap.js"></script>
+
+  <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
+
+  <!-- Essential JS 2 all script -->
+  <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
+
+  <!-- Essential JS 2 Calendar's dependent scripts -->
+  <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+  <script src="https://cdn.syncfusion.com/ej2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="top-nav">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class=" nav navbar-nav ms-auto">
+            <li class="nav-item dropdownbtn">
+              <a class="nav-link" href="#">My Page</a>
+              <div class="dropdown-content">
+                <a href="#">Kirjaidu ulos</a>
+              </div>
+            </li>
+            <li class="nav-item dropdownbtn">
+              <a class="nav-link" href="#">Suomeksi</a>
+              <div class="dropdown-content">
+                <a href="#">English</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span><i style='font-size:14px' class='fas fcart'>&#xf07a;</i>0 Items</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="logo">
+      <a href="index.html"><img class="img-logo" src="images/logo-1.png" alt="logo"></a>
+    </div>
+    <div class="nav-second">
+      <a class="nav-link-second" href="about-ingo.html">About Ingo</a>
+      <a class="nav-link-second" href="organizers.html">Organizers</a>
+      <a class="nav-link-second" href="#">Calander</a>
+    </div>
+  </div>
+
+
+  <div class="body-main">
+
+    <div class="banner-image">
+      <div class="banner-image-text">
+        <p class="">Järjestäjille</p>
+      </div>
+    </div>
+
+    <div class="ingo-beta ingo-beta-about ingo-beta-organizer">
+      <div class="ingo-help login">
+        <div class="icon-background icon-background-organizer">
+          <i style="color: white; font-size:48px;" class="calendar-icon calander-icon-organizer fa-solid fa-calendar"></i>
+        </div>
+        <h4>kirjaudu sisään</h4>
+        <div class="first-col-para1">
+          <p class="first-col-para-text1">Kirjaudu sisään ja luo oma profiilisi. Maksullisissa tapahtumissa autamme mielellämme profiilin luonnissa ja myöskin tapahtuman luomisessa. Järjestelmä on kuitenkin yksinkertainen ja todennäköisesti selviät siitä ilman hammasten kiristelyä.</p>
+        </div>
+      </div>
+
+      <div class="ingo-help create-event">
+        <div class="icon-background icon-background-organizer">
+          <i style="color: white; font-size:48px;" class="calendar-icon calander-icon-organizer fa-solid fa-calendar"></i>
+        </div>
+        <h4>Luo tapahtuma</h4>
+        <div class="first-col-para1">
+          <p class="first-col-para-text1">Tee tapahtuma, lisää media (kuvia yms. ) ja käy kohta kohdalta läpi tapahtumasi tarvitsemat tiedot. Tapahtumaa luodessasi voit määrittää kysymykset joita kysyt osallistujiltasi: ikä, sukupuoli, allergiat, kengän koon… ihan mitä haluat. Valitse onko tapahtuma julkinen vai haluatko pitää sen piilotettuna.</p>
+        </div>
+      </div>
+
+      <div class="money">
+        <div class="icon-background icon-background-organizer">
+          <i style="color: white; font-size:48px;" class="calendar-icon calander-icon-organizer fa-solid fa-calendar"></i>
+        </div>
+        <h4>Rahat tilille ja raportit haltuun</h4>
+        <div class="second-col-para1">
+          <p class="second-col-para-text1">Sekä maksupalvelun kautta saadut raportit ja osallistujista saadut raportit helpottavat kummasti tapahtuman järjestämistä. Liput on jo maksettu ja rahat ovat tilillänne.</p>
+        </div>
+        <div class="second-col-para2">
+          <p class="second-col-para-text">INGO kehitettiin urheilutapahtumille ja harrasteryhmille mutta sitä voi käyttää ihan mille tapahtumille tahansa.</p>
+        </div>
+      </div>
+      <button class="btn register-button organizer-button" type="button" name="button">Rekisteröidy tapahtuman järjestäjäksi</button>
+    </div>
+
+    <div class="tariff">
+      <h2 class="tariff-head">Tariff</h2>
+      <div class="ingo-free">
+        <h2>Ingo Free</h2>
+        <ul>
+          <li>My event page</li>
+          <li>Comprehensive reports</li>
+          <li>Visibility in event listings (public)</li>
+          <li class="li-cross">Payment functions</li>
+          <li class="li-cross">Possibility of product sales</li>
+          <li class="li-cross">Free INGO Support service</li>
+          <li class="li-cross">Opportunity for advertising revenue</li>
+        </ul>
+        <h1>FREE</h1>
+      </div>
+
+      <div class="ingo-non-free">
+        <h2>For ticket sellers</h2>
+        <ul>
+          <li>My event page</li>
+          <li>Comprehensive reports</li>
+          <li>Visibility in event listings</li>
+          <li>Possibility of ticket sales</li>
+          <li>Possibility of product sales</li>
+          <li>Opportunity for advertising revenue</li>
+        </ul>
+        <p class="tariff-formula">1.4% + €0.50</p>
+        <p class="commission">commission/ticket</p>
+        <p class="tariff-formula">€9.90/month</p>
+        <p class="commission">(+24% VAT)</p>
+      </div>
+    </div>
+    <div class="tariff-button">
+      <a href="ask-more-information.html">
+        <button class="btn register-button t-b" type="button" name="button">Ask for more information</button>
+      </a>
+    </div>
+
+    <div class="coll">
+      <h3>Here's how to get started</h3>
+      <ul class="accordian">
+        <li>
+          <input type="radio" name="collapse" id="first" checked>
+          <label class="collapsible" for="first" >introduction of the service</label>
+          <div class="cont">
+            <p>
+              Register for the INGO event service <a href="">here</a>.
+            </p>
+            <p>
+              After registration, you will receive an automatic confirmation message in your e-mail, and after that the program will help you move forward.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" name="collapse" id="second" >
+          <label class="collapsible" for="second">Event organizer information</label>
+          <div class="cont">
+            <p>
+              After registration, you will be guided to complete the information as the organizer of the event. When the necessary information is stored, you can connect the payment gateway for ticket sales of paid events if you wish.
+            </p>
+            <p>
+              And everything is ready to create events!
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <input type="radio" name="collapse" id="third" >
+          <label class="collapsible" for="third">Events and ticket sales</label>
+          <div class="cont">
+            <p>
+              INGO makes creating events unprecedentedly easy!
+            </p>
+            <p>
+              When you have updated your profile of the event organizer to the end, you can proceed to the actual thing - creating events!
+            </p>
+            <p>
+              With it, the events can be found on their own pages and you can direct ticket buyers to the right place easily and quickly. Of course, you also create tickets for the events with the conditions you want, and each ticket buyer accumulates both the participant list and your cash register.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="body-events-content">
+      <h2>Latest Events</h2>
+
+      <p>Below you find latest public events. By clicking on the event, you can also see more detailed information about the organizer.</p>
+    </div>
+
+    <div class="events-contents-slide">
+      <form class="search-form" role="search" id="form">
+        <button class="body-search-button">
+          <svg viewBox="0 0 1024 1024">
+            <path class="path1"
+              d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+            </path>
+          </svg>
+        </button>
+        <input class="search-input" type="search" id="query" name="q" placeholder="Search for events..." aria-label="Search through site content">
+        <button class="btn register-button find-events-button" type="button" name="button">Find Events</button>
+        <div class="search-menu-dropdown">
+          <button onclick="myFunction()" class="search-button">Photo <div id="arrow-d" class="arrow"></div></button>
+          <div id="myDropdown" class="serach-dropdown-options">
+            <a class="dropdown-items" href="#">List</a>
+            <a class="dropdown-items" href="#">Month</a>
+            <a class="dropdown-items" href="#">Day</a>
+            <a class="dropdown-items" href="#">Week</a>
+            <a class="dropdown-items" href="#">Map</a>
+          </div>
+        </div>
+      </form>
+
+      <!-- javascript for the search bar -->
+      <script>
+        const f = document.getElementById('form');
+        const q = document.getElementById('query');
+        const google = 'https://www.google.com/search?q=site%3A+';
+
+        function submitted(event) {
+          event.preventDefault();
+          const url = google + site + '+' + q.value;
+          const win = window.open(url, '_blank');
+          win.focus();
+        }
+        f.addEventListener('submit', submitted);
+      </script>
+
+      <!-- javascript for search dropdown -->
+      <script>
+        function myFunction() {
+          document.getElementById("arrow-d").classList.toggle("arrow-down");
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches(".search-button")) {
+            document.getElementById("myDropdown").classList.remove("show");
+            document.getElementById("arrow-d").classList.remove("arrow-down");
+          }
+        }
+      </script>
+
+      <script>
+        /* Javascript for collapse */
+        /*
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+
+        }
+
+        */
+      </script>
+
+
+      <div class="upcoming-events">
+        <div>
+          <i class="event-arrow left arrow-left"> </i>
+          <i class="event-arrow right arrow-right"> </i>
+        </div>
+        <div><button class="upcoming-button" type="button" name="button">Today</button></div>
+        <button onclick="showCalander()" class="calnder-button" type="button" name="button">Upcoming <div id="arrowCalander" onclick="myFunction()" class="arrow-calander arrow-calander-up"></div></button>
+        <div id="element" />
+        <script>
+          // initialize the Calendar component
+          function showCalander() {
+            document.getElementById("arrowCalander").classList.toggle("arrow-down");
+            var calendar = new ej.calendars.Calendar();
+            // Render the initialized button.
+            calendar.appendTo('#element')
+            document.getElementById("element").classList.toggle("show-calander");
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="container-fluid event-row">
+
+      <div class="row">
+        <div class="col event-col col-lg-4 col-md-6">
+          <img class="event-image" src="images/Sanna-hoidossa-vaaka.jpeg" alt="first-event">
+          <div class="event-description">
+            <div class="event-content-text">
+              <p class="event-short-month">OCT</p>
+              <p class="event-day">21</p>
+            </div>
+            <div class="event-content-text">
+              <p class="event-full-date">October 6, 2021 - December 21, 2022</p>
+              <a class="event-name" href="#">Äänimaljahoito</a>
+              <div class="ticket-link"><a class="get-ticket" href="#">Get Tickets</a>
+                <p class="ticket-price">60,00€ – 90,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col event-col col-lg-4 col-md-6">
+          <img class="event-image" src="images/Sanna-hoidossa-vaaka.jpeg" alt="first-event">
+          <div class="event-description">
+            <div class="event-content-text">
+              <p class="event-short-month">OCT</p>
+              <p class="event-day">21</p>
+            </div>
+            <div class="event-content-text">
+              <p class="event-full-date">October 6, 2021 - December 21, 2022</p>
+              <a class="event-name" href="#">Äänimaljahoito</a>
+              <div class="ticket-link"><a class="get-ticket" href="#">Get Tickets</a>
+                <p class="ticket-price">60,00€ – 90,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col event-col col-lg-4 col-md-6">
+          <img class="event-image" src="images/Sanna-hoidossa-vaaka.jpeg" alt="first-event">
+          <div class="event-description">
+            <div class="event-content-text">
+              <p class="event-short-month">OCT</p>
+              <p class="event-day">21</p>
+            </div>
+            <div class="event-content-text">
+              <p class="event-full-date">October 6, 2021 - December 21, 2022</p>
+              <a class="event-name" href="#">Äänimaljahoito</a>
+              <div class="ticket-link"><a class="get-ticket" href="#">Get Tickets</a>
+                <p class="ticket-price">60,00€ – 90,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col event-col col-lg-4 col-md-6">
+          <img class="event-image" src="images/Sanna-hoidossa-vaaka.jpeg" alt="first-event">
+          <div class="event-description">
+            <div class="event-content-text">
+              <p class="event-short-month">OCT</p>
+              <p class="event-day">21</p>
+            </div>
+            <div class="event-content-text">
+              <p class="event-full-date">October 6, 2021 - December 21, 2022</p>
+              <a class="event-name" href="#">Äänimaljahoito</a>
+              <div class="ticket-link"><a class="get-ticket" href="#">Get Tickets</a>
+                <p class="ticket-price">60,00€ – 90,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col event-col col-lg-4 col-md-6">
+          <img class="event-image" src="images/Sanna-hoidossa-vaaka.jpeg" alt="first-event">
+          <div class="event-description">
+            <div class="event-content-text">
+              <p class="event-short-month">OCT</p>
+              <p class="event-day">21</p>
+            </div>
+            <div class="event-content-text">
+              <p class="event-full-date">October 6, 2021 - December 21, 2022</p>
+              <a class="event-name" href="#">Äänimaljahoito</a>
+              <div class="ticket-link"><a class="get-ticket" href="#">Get Tickets</a>
+                <p class="ticket-price">60,00€ – 90,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col event-col col-lg-4 col-md-6">
+          <img class="event-image" src="images/Sanna-hoidossa-vaaka.jpeg" alt="first-event">
+          <div class="event-description">
+            <div class="event-content-text">
+              <p class="event-short-month">OCT</p>
+              <p class="event-day">21</p>
+            </div>
+            <div class="event-content-text">
+              <p class="event-full-date">October 6, 2021 - December 21, 2022</p>
+              <a class="event-name" href="#">Äänimaljahoito</a>
+              <div class="ticket-link"><a class="get-ticket" href="#">Get Tickets</a>
+                <p class="ticket-price">60,00€ – 90,00€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <hr class="event-line">
+
+      <div class="event-changer">
+        <div>
+          <button class="event-button-previous" type="button" name="button">
+            <i class="event-arrow left arrow-left event-arrow-Previous"> </i>
+            Previous Events
+          </button>
+          <button class="event-button-next" type="button" name="button">
+            Next Events
+            <i class="event-arrow right arrow-right event-arrow-Next"> </i>
+          </button>
+        </div>
+
+        <button type="button" class="btn btn-outline-primary sub-to-calander">Subscribe to Calander </button>
+
+        <button class="btn register-button all-events" type="button" name="button">All Events</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-main">
+    <div class="footer-top">
+      <div class="footer-one">
+        <h5 class="footer-top-heading">KUMPPANI</h5>
+        <p>INGO on ilmoittautumisjärjestelmä. Emme vastaa tapahtumista ja niiden sisällöstä. Mikäli haluat tietoa tapahtumista tai ottaa tapahtumajärjestäjään yhteyttä niin tiedot löydät tapahtuman omalta sivulta.</p>
+        <p>Ilmoittautujien ja järjestäjien tiedot kerätään GDPR sääntöjä noudattaen.</p>
+        <p>INGO CLOUD SERVICES / July Partners Oy 2020</p>
+        <p>Y-tunnus: 0656705-9</p>
+        <p>PL 255, 67101 Kokkola, Finland</p>
+      </div>
+      <div class="footer-two">
+        <h5 class="footer-top-heading">MYYNTI JA LISÄTIEDOT</h5>
+        <i style='font-size:26px' class="fa fa-envelope envelope" aria-hidden="true"></i>
+        <a class="footer-email" href="#">service@ingo.fi</a>
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook-square" style="font-size:68px;color:#D0397A"></i></a>
+          <a href="#"><i class="fa fa-instagram-square" style="font-size:68px;color:#D0397A"></i></a>
+
+        </div>
+      </div>
+      <div class="footer-three">
+        <h5 class="footer-top-heading">SIVUKARTTA</h5>
+
+        <ul>
+          <li><a href="#">Etusivu</a></li>
+          <li><a href="#">Kalenteri</a></li>
+          <li><a href="#">Järjestäjille</a></li>
+          <li><a href="#">Tietoa Ingosta</a></li>
+          <li><a href="#">Rekisteri- ja tietosuojaselostessa</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-seperator">
+
+    <div class="footer-bottom">
+      <p class="footer-bottom-para">© INGO CLOUD SERVICES / July Partners Oy 2020</p>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
